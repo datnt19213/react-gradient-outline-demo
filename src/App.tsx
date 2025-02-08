@@ -4,15 +4,51 @@ import {Gline} from "gradient-outline";
 
 function App() {
   return (
-    <div className="bg-red-200 w-full h-full">
+    <div className="container">
       <Gline
+        className="product-card"
         allowHover={true}
         borderRadius={8}
-        id="gradient-outline"
-        className="w-fit h-fit"
+        id="gradient-outline-p-card"
       >
-        <div className="px-4 py-3">Hello World</div>
+        <div className="">Hello World</div>
       </Gline>
+      <div className="bg-card">
+        <Gline
+          className="product-card-down"
+          allowHover={true}
+          gradientColors={["#5a2fb6", "#9efff5"]}
+          hoverGradientColors={["#ad7b30", "#5be3af"]}
+          borderRadius={8}
+          id="gradient-outline-p-card-down"
+        >
+          <div className="">Hello World</div>
+        </Gline>
+      </div>
+
+      <Gline
+        className="btn"
+        allowHover={true}
+        gradientColors={["#5a2fb6", "#9efff5"]}
+        hoverGradientColors={["#ad7b30", "#5be3af"]}
+        borderRadius={4}
+        id="gradient-outline-button"
+      >
+        <div className="">Hello World</div>
+      </Gline>
+      <div className="bg-btn">
+        <Gline
+          className="btn-down"
+          contentClass="btn-down-content"
+          allowHover={true}
+          gradientColors={["#5a2fb6", "#9efff5"]}
+          hoverGradientColors={["#ad7b30", "#5be3af"]}
+          borderRadius={4}
+          id="gradient-outline-button-blur-down"
+        >
+          Hello World
+        </Gline>
+      </div>
     </div>
   );
 }
